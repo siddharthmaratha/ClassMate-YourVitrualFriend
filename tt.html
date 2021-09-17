@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <title>CM | TT Generator</title>
+    <style>
+        *{
+            font-family: 'Sniglet', cursive;
+            box-sizing: border-box;
+            margin: 0%;
+        }
+        header, header p{
+            background-color: #FDEFEF;
+            color: #d4aa4d;
+            text-align: center;
+            padding: 20px 30px;
+            font-weight: bold;
+        }
+        header h1{
+            font-size: 80px;
+        }
+        header h3{
+            color: #b1b1b1;
+        }
+        #logo{
+            margin-left: 100px;
+            float: left;
+            height:200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        nav{
+            background-color: #F4DFD0;
+            overflow: hidden;
+        }
+        nav a{
+            display: block;
+            background-color: #F4DFD0;
+            text-decoration: none;
+            color:#1e3d59;
+            font-weight: bold;
+            float: left;
+            padding: 5px 10px;
+        }
+        nav a:hover{
+            background-color: #1e3d59;
+            color: #f5f0e1;
+        }
+        body{
+            background-color: rgba(173, 216, 230, 0.171);
+        }
+        section{
+            margin: 40px;
+        }
+        .form , .form2{
+            text-align: center;
+            color: black;
+        }
+        .subjects, .subdif {
+            color: black;
+            word-spacing: 5px;
+            padding: 10px;
+        }
+        #submit, #submitdif{
+            background-color: #4daea1;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        #submit:hover, #submitdif:hover{
+            background-color: #4caf84 ;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="home" style="height: 280px;">
+        <img src="Images/logo.png" alt="Doge" id="logo"> <p > <h1>ClassMate</h1> <h3>Your Virtual Friend</h3> </p>
+    </header>
+<main> 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="notes.html">Notes</a>
+        <a href="practice.html">Practice</a>
+        <a href="#home">Time Table Generator</a>
+        <a href="help.html">Help</a>
+        <a href="aboutus.html">About Us</a>
+    </nav>
+    <section> 
+        <p class="container">
+            <form class="form">
+                <label class="subjects" id="subject1">
+                    Subject 1 : <input type="text" name="sub1" id="sub1">
+                </label> <br> <br>
+                <label class="subjects" id="subject2">
+                    Subject 2 : <input type="text" name="sub2" id="sub2">
+                </label> <br> <br>
+                <label class="subjects" id="subject3">
+                    Subject 3 : <input type="text" name="sub3" id="sub3">
+                </label> <br> <br>
+                <label class="subjects" id="subject4">
+                    Subject 4 : <input type="text" name="sub4" id="sub4">
+                </label> <br> <br>
+                <label class="subjects" id="subject5">
+                    Subject 5 : <input type="text" name="sub5" id="sub5">
+                </label> <br> <br>
+                <!--&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" name="submit" id="submit"> -->
+            </form>
+        </p>
+        <br>
+        <p class="container2">
+            <form class="form2">
+                <label class="subdif" id="sub1dif">
+                    Subject 1 :  <input type="radio" name="subdiff1" id="sub1easy"> Easy <input type="radio" name="subdiff1" id="sub1avg"> Average <input type="radio" name="subdiff1" id="sub1hard"> Hard
+                </label> <br> <br>
+                <label class="subdif" id="sub2dif">
+                    Subject 2 :  <input type="radio" name="subdiff2" id="sub2easy"> Easy <input type="radio" name="subdiff2" id="sub2avg"> Average <input type="radio" name="subdiff2" id="sub2hard"> Hard
+                </label> <br> <br>
+                <label class="subdif" id="sub3dif">
+                    Subject 3 :  <input type="radio" name="subdiff3" id="sub3easy"> Easy <input type="radio" name="subdiff3" id="sub3avg"> Average <input type="radio" name="subdiff3" id="sub3hard"> Hard
+                </label> <br> <br>
+                <label class="subdif" id="sub4dif">
+                    Subject 4 :  <input type="radio" name="subdiff4" id="sub4easy"> Easy <input type="radio" name="subdiff4" id="sub4avg"> Average <input type="radio" name="subdiff4" id="sub4hard"> Hard
+                </label> <br> <br>
+                <label class="subdif" id="sub5dif">
+                    Subject 5 :  <input type="radio" name="subdiff5" id="sub5easy"> Easy <input type="radio" name="subdiff5" id="sub5avg"> Average <input type="radio" name="subdiff5" id="sub5hard"> Hard
+                </label> <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" name="submitdif" id="submitdif">
+            </form>
+        </p>
+    </section>
+</main>
+<script>
+    var test = document.querySelector('#subject1');
+    const submit = document.querySelector('#submit');
+    submit.onclick= function(){
+        alert('Hello ' + test);
+    }
+</script>
+</body>
+</html>

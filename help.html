@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+   <title>CM | Help</title>
+    <style>
+        *{
+            font-family: 'Sniglet', cursive;
+            box-sizing: border-box;
+            margin: 0%;
+        }
+        header, header p{
+            background-color: #FDEFEF;
+            color: #d4aa4d;
+            text-align: center;
+            padding: 20px 30px;
+            
+            font-weight: bold;
+        }
+        header h1{
+            font-size: 80px;
+        }
+        header h3{
+            color: #b1b1b1;
+        }
+        #logo{
+            margin-left: 100px;
+            float: left;
+            height:200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        nav{ 
+            background-color: #F4DFD0;
+            overflow: hidden;
+        }
+        nav a{
+            display: block;
+            background-color: #F4DFD0;
+            text-decoration: none;
+            color:#1e3d59;
+            font-weight: bold;
+            float: left;
+            padding: 5px 10px;
+        }
+        nav a:hover{
+            background-color: #1e3d59;
+            color: #f5f0e1;
+        }
+        body{
+            background-color: rgba(173, 216, 230, 0.171);           
+        }
+
+        #footer{
+            background-color: lightblue;
+            height: 200px;
+        }
+        form{
+            margin:80px;
+        }
+        form label, h2{
+            padding: 20px;
+            display: block;
+        }
+        #que input{
+            height: 200px;
+            width: 400px;
+        }
+        #submit{
+            margin: 20px;
+            background-color: #4daea1;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        #submit:hover{
+            background-color: #4caf84 ;
+        }
+    </style>
+</head>
+<body>
+    <header id="home" style="height: 280px;">
+        <img src="Images/logo.png" alt="Doge" id="logo"> <p > <h1>ClassMate</h1> <h3>Your Virtual Friend</h3> </p>
+    </header>
+<main> 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="notes.html">Notes</a>
+        <a href="practice.html">Practice</a>
+        <a href="tt.html">Time Table Generator</a>
+        <a href="#home">Help</a>
+        <a href="aboutus.html">About Us</a>
+    </nav>
+    <section>
+        <div id="form">
+            <form>
+                <h2>Ask us your Doubts and Queries :</h2>
+                <label>
+                    First name : <br><input type="text" placeholder="Enter first name" required>
+                </label>
+                <label>
+                    Last name : <br><input type="text" placeholder="Enter last name" required>
+                </label>
+                <label>
+                    Email : <br><input type="email" placeholder="Enter your email" required>
+                </label>
+                <label id="que">
+                    Ask your Questions : <br><input type="text" placeholder="Write your questions or queries here.." required>
+                </label>
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
+         </div>
+    </section>
+</main>
+
+</body>
+</html>
