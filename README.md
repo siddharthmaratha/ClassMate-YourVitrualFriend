@@ -1,1 +1,1 @@
-# ClassMate-YourVitrualFriend
+# ClassMate-Your Vitrual Friend
